@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h3>Enter your name to find your seat</h3>
+
+<p>Enter your first name followed by your last name</p>
+<input type="text" id="myText" value="komal patel">
+
+<button onclick="myFunction()">Enter</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  let x = document.getElementById("myText").value;
+  let dict = {"kushal patel": "1A", "komal patel": "1B"}
+  document.getElementById("demo").innerHTML = dict[x.toLowerCase()];
+}
+</script>
+
+</body>
+</html>
